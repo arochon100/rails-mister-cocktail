@@ -9,6 +9,13 @@ class ReviewsController < ApplicationController
       @dose = Dose.new
       render "cocktails/show"
     end
+
+  def destroy
+    @review = Review.find(params[:id])
+    @review.destroy
+    redirect_to cocktail_path(@review.cocktail)
+  end
+
   end
 
   private
