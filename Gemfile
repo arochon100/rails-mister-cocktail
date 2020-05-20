@@ -31,6 +31,8 @@ gem 'font-awesome-sass', '~> 5.12.0'
 gem 'simple_form'
 gem 'cloudinary', '~> 1.12.0'
 
+#Authentification
+gem 'devise'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 

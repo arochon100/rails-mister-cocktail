@@ -13,6 +13,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render "shared/navbar" %>
+      <%= yield %>
+    <%= render "shared/footer" %>
+    <%= render '/devise/shared/flashes' %>
   </body>
 </html>
